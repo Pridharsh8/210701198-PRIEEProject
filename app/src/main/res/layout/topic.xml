@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:background="@drawable/pink"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageButton
+            android:id="@+id/be"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ba" />
+
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="45dp"
+            android:text="Science"
+            android:textSize="70sp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Topics"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:text="Exploring the Boundless Frontiers of Knowledge: Science Unveiling Nature's Mysteries."
+        android:textSize="20dp"
+        android:fontFamily="@font/a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="370dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="410dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <GridLayout
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:columnCount="1">
+
+            <Button
+                android:id="@+id/lw"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:text="The Living World"
+                android:textSize="20dp"
+                android:background="@color/blue1"/>
+
+            <Button
+                android:id="@+id/ak"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Plant Kingdom"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Cell Unit of Life"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:text="Organic Chemistry"/>
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:text="Solutions"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:text="ThermoDynamics"
+                android:textSize="20dp" />
+
+
+        </GridLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
